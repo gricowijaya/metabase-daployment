@@ -12,12 +12,13 @@ services:
       - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
       - MYSQL_DATABASE=${DB_NAME}
       - MYSQL_USER=${DB_USER}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
       - MYSQL_HOST=${DB_HOST}
       - MYSQL_PORT=${DB_PORT}
     volumes:
       - mysql:/var/lib/mysql
     ports:
-      - 3307:3306
+      - 3306:3306
 
   metabase:
     image: metabase/metabase:latest
