@@ -2,7 +2,7 @@ version: "3"
 services:
 
   metabase-db:
-    container_name: pgdb_build_it_2022
+    container_name: pgdb_metabase
     image: postgres:10.6
     ports:
       - "${DB_PORT}:5432"
