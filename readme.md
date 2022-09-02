@@ -2,7 +2,6 @@
 
 Deployment Of Metabase Dashboard using Docker Compose File 
 
-
 ```bash
 cp .env.example .env
 ```
